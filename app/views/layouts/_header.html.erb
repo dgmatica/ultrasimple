@@ -1,0 +1,25 @@
+<header>
+  <div class="logo">
+    <%= link_to '/', class: :logo do %>
+      <%= '{ L O G O }' %>
+    <% end %>
+  </div>
+
+  <nav class="top-nav">
+      <%= link_to 'Портфоліо', '/portfolio', data: { turbo_frame: "mainturbo" } %>
+      <%= link_to 'Інфо', '/info', data: { turbo_frame: "mainturbo" }%>
+      <%= link_to 'Контакти', '/contacts', data: { turbo_frame: "mainturbo" } %>
+  </nav>
+
+  <div class="social-links-top">
+    <%= link_to '#', class: :instagram do %>
+      Instagram
+    <% end %>
+    <%= link_to '#', class: :email do %>
+      Email
+    <% end %>
+    <%= link_to '#', class: :telegram do %>
+      Telegram
+    <% end %>
+  </div>
+</header>
